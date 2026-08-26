@@ -1,0 +1,21 @@
+# write a query to create table .
+
+CREATE TABLE trainers
+(
+    tid number UNIQUE,
+    tname VARCHAR(20),
+    mno NUMBER CHECK(length(mno)=10),
+    dob date,
+    jdate date,
+    sal number CHECK(sal>0)
+);
+
+SELECT
+    TID,
+    TNAME,
+    MNO,
+    DOB,
+    JDATE,
+    SAL
+FROM
+    TRAINERS;
